@@ -4,12 +4,12 @@ import './Footer.css';
 
 function Footer(){
   return (
-    <footer class="footer">
-      <section class="copy">
+    <footer className="footer">
+      <section className="copy">
         Copyright © 2022 - MITXPRO
       </section>
-      <section class="author">
-        Made with <img src={Heart} alt="Love"/> for <a href="https://github.com/arturomsoberanes" target="_blank">Arturo Soberanes</a>
+      <section className="author">
+        Made with <img src={Heart} alt="Love"/> for <a href="https://github.com/arturomsoberanes" target="_blank" rel="noopener">Arturo Soberanes</a>
       </section>
     </footer>
   );

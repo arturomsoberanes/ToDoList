@@ -1,4 +1,78 @@
 .main {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  color:white;
+}
+.input {
+  width: 100%;
+  border: 0;
+  border-bottom:2px solid #fff;
+  background: transparent;
+  font-size: 1.2rem;
+  margin: 0.5em 0;
+  color: white;
+}
+.input:focus {
+  font-size: 1.3rem;
+}
+.list {
+  width: 95%;
+  max-width: 400px;
+  border: 3px solid #F51A4E;
+  padding: 1em;
+}
+.list-item {
+  font-size: 1.2rem;
+  width: 100%;
+  border-bottom: 1px solid #CFC6C7;
+}
+.list-item label {
+  display:inline-block;
+  margin: .5em;
+  line-height: 2.3em;
+  cursor:pointer;
+}
+.checks + label:before {
+  content: "";
+	width: 26px;
+	height: 26px;
+	float: left;
+	margin: 0.5em 0.5em 0 0;
+	border: 2px solid #ccc;
+	background: #fff;
+}
+.checks:checked + label:before {
+  border-color:#0fbf12;
+}
+.checks:checked + label:after {
+  content: "";
+  width: 15px;
+  height: 9px;
+  border: 4px solid #0fbf12;
+  float: left;
+  margin-left: -1.50em;
+  border-right: 0;
+  border-top: 0;
+  margin-top: .9em;
+  transform: rotate(-55deg);
+}
+.checks {
+  display:none;
+}
+.list-item button {
+  margin-top: 1em;
+  float:right;
+  padding: .5em;
+  border: 3px solid #FC323C;
+  color:#FC323C;
+}
+.list-item button:hover {
+  background-color: #FC323C;
+  color:white;
+  font-weight: bold;
+  cursor:pointer;
 }
